@@ -23,8 +23,14 @@ function OnboardContent() {
                     integrator="brunelonchain"
                     config={{
                         variant: "wide",
-                        // In a real app, we would map the 'theme' to a destination token or Chain ID here
-                        // e.g. fromChain: ..., toChain: ..., toToken: ...
+                        toChain: 999, // HyperEVM Chain ID
+                        appearance: "light",
+                        theme: {
+                            container: {
+                                border: "1px solid rgb(234, 234, 234)",
+                                borderRadius: "16px",
+                            },
+                        },
                     }}
                 />
             </div>
